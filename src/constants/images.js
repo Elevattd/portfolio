@@ -43,6 +43,11 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
+import pokemon from '../assets/pokemon.png';
+import yovoy from '../assets/yovoy.png';
+import netflix from '../assets/netflix.png';
+import rtkCcrud from '../assets/rkt-crud.png';
+
 export default {
 	email,
 	mobile,
@@ -79,4 +84,8 @@ export default {
 	spotify,
 	postgresql,
 	express,
+	pokemon,
+	yovoy,
+	netflix,
+	rtkCcrud,
 };
