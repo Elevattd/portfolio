@@ -9,17 +9,15 @@ import './Skills.scss';
 
 const Skills = () => {
 	const skills = [
-		{ name: 'Java Script.', icon: images.javascript },
-		{ name: 'React.', icon: images.react },
-		{ name: 'Redux Js.', icon: images.redux },
-		{ name: 'TypeScript.', icon: images.typescript },
-		{ name: 'Node Js.', icon: images.node },
-		{ name: 'HTML.', icon: images.html },
-		{ name: 'Css.', icon: images.css },
-		{ name: 'MU5.', icon: images.mu5 },
-		{ name: 'Express.', icon: images.express },
-		{ name: 'PostgreSQL.', icon: images.postgresql },
-		{ name: 'Git.', icon: images.git },
+		{ name: 'Java Script', icon: images.javascript },
+		{ name: 'HTML', icon: images.html },
+		{ name: 'CSS', icon: images.css },
+		{ name: 'React', icon: images.react },
+		{ name: 'Redux JS', icon: images.redux },
+		{ name: 'TypeScript', icon: images.typescript },
+		{ name: 'Node JS', icon: images.node },
+		{ name: 'Express', icon: images.express },
+		{ name: 'MU5', icon: images.mu5 },
 	];
 	const experiences = [
 		{
@@ -38,7 +36,7 @@ const Skills = () => {
 
 	return (
 		<>
-			<h2 className="head-text">Skills & Experiences</h2>
+			<h2 className="head-text">Skills & Experiencias</h2>
 			<div className="app__skills-container">
 				<motion.div className="app__skills-list">
 					{skills.map((skill) => (
@@ -87,8 +85,4 @@ const Skills = () => {
 	);
 };
 
-export default AppWrap(
-	MotionWrap(Skills, 'app__skills'),
-	'skills',
-	'app__whitebg',
-);
+export default AppWrap(Skills, 'skills');

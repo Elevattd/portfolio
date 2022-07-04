@@ -4,15 +4,16 @@ import { motion } from 'framer-motion';
 // import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { images } from '../../constants';
+import { AppWrap, MotionWrap } from '../../wrapper';
 
 const About = () => {
 	const abouts = [
-		{
-			title: 'Fullstack Developer',
-			description:
-				'Mis conocimientos me permiten desarrollar y trabajar tanto en el frontend como en el backend',
-			imgUrl: images.about01,
-		},
+		// {
+		// 	title: 'Fullstack Developer',
+		// 	description:
+		// 		'Mis conocimientos me permiten desarrollar y trabajar tanto en el frontend como en el backend',
+		// 	imgUrl: images.about01,
+		// },
 		{
 			title: 'Frontend Development',
 			description: 'React, redux, redux-toolkit',
@@ -29,16 +30,6 @@ const About = () => {
 			imgUrl: images.about04,
 		},
 	];
-
-	// const [abouts, setAbouts] = useState([]);
-
-	// useEffect(() => {
-	// 	const query = '*[_type == "abouts"]';
-
-	// 	client.fetch(query).then((data) => {
-	// 		setAbouts(data);
-	// 	});
-	// }, []);
 
 	return (
 		<>
@@ -70,10 +61,10 @@ const About = () => {
 	);
 };
 
-// export default AppWrap(
-//   MotionWrap(About, 'app__about'),
-//   'about',
-//   'app__whitebg',
-// );
+export default AppWrap(
+	MotionWrap(About, 'app__about'),
+	'about',
+	'app__whitebg',
+);
 
-export default About;
+// export default About;

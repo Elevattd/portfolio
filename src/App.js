@@ -4,7 +4,7 @@ import About from './container/About/About';
 import Footer from './container/Footer/Footer';
 import Header from './container/Header/Header';
 import Skills from './container/Skills/Skills';
-import Testimonial from './container/Testimonial/Testimonial';
+import Contact from './container/Contact/Contact';
 import Work from './container/Work/Work';
 import './App.scss';
 
@@ -14,9 +14,9 @@ function App() {
 			<Navbar />
 			<Header />
 			<About />
-			{/* <Work /> */}
 			<Skills />
-			{/* <Testimonial /> */}
+			<Work />
+			<Contact />
 			<Footer />
 		</div>
 	);
