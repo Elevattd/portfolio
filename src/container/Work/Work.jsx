@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import './Work.scss';
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -13,19 +13,17 @@ const Work = () => {
 			title: 'Pokemon App',
 			url: 'https://app-pokedex-pi.vercel.app/',
 			imgUrl: images.pokemon,
-			description: 'Futura description',
+			urlR: 'https://github.com/Elevattd/Pokedex',
+			description:
+				'Node.js, Express, Sequelize, PostgreSQL, HTML, CSS, Javascript, React, Redux, entre otras..',
 		},
 		{
 			title: 'yoVoy!',
-			url: 'http://',
+			url: 'https://yovoy-frontend.herokuapp.com/',
 			imgUrl: images.yovoy,
-			description: 'Futura description',
-		},
-		{
-			title: 'ReduxToolKit Crud',
-			url: 'http://',
-			imgUrl: images.rtkCcrud,
-			description: 'Futura description',
+			urlR: 'https://github.com/Elevattd/yoVoy-',
+			description:
+				'Typescript, HTML, CSS, React, Redux, Json Web Token, Material UI.',
 		},
 		{
 			title: 'Netflix Clone',
@@ -43,7 +41,7 @@ const Work = () => {
 			<motion.div ref={carousel} className="slider-container">
 				<motion.div
 					drag="x"
-					dragConstraints={{ left: -700, right: 0 }}
+					dragConstraints={{ left: -350, right: 0 }}
 					className="slider"
 				>
 					{projects.map((project, index) => (
@@ -61,18 +59,15 @@ const Work = () => {
 									alt={project.title}
 								/>
 								<div className="Card_bg_li">
-									<a href={project.url}>
-										<ImGithub size={50} />
+									<a href={project.urlR}>
+										<ImGithub size={20} />
+										<p>Repositorio</p>
 									</a>
 									<a href={project.url}>
-										<SiVercel size={50} />
+										<SiVercel size={20} />
+										<p>Deploy</p>
 									</a>
 								</div>
-								{/* <div className="Card_bg_li">
-									<a href={project.url}>
-										<ImGithub size={60} />
-									</a>
-								</div> */}
 							</div>
 							<h2 className="bold-text" style={{ marginTop: 20 }}>
 								{project.title}
@@ -88,31 +83,4 @@ const Work = () => {
 	);
 };
 
-// return (
-// 	<div className="app__profiles">
-// 		{projects.map((project, index) => (
-// 			<a href={project.url}>
-// 				<motion.div
-// 					whileInView={{ opacity: 1 }}
-// 					whileHover={{ scale: 1.1 }}
-// 					transition={{ duration: 0.5, type: 'tween' }}
-// 					className="app__profile-item"
-// 					key={project.title + index}
-// 				>
-// 					<img src={project.imgUrl} alt={project.title} />
-// 					<h2 className="bold-text" style={{ marginTop: 20 }}>
-// 						{project.title}
-// 					</h2>
-// 					<p className="p-text" style={{ marginTop: 10 }}>
-// 						{project.description}
-// 					</p>
-// 				</motion.div>
-// 			</a>
-// 		))}
-// 	</div>
-// );
-// };
-
 export default AppWrap(MotionWrap(Work, 'app__work'), 'work', 'app__whitebg');
-
-// export default AppWrap(Work, 'work');

@@ -15,14 +15,38 @@
 	z-index: 2;
 }
 
+.app__navbar__button {
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	border: none;
+	background-color: var(--secondary-color);
+
+	font-weight: 500;
+	color: var(--white-color);
+	outline: none;
+	margin: 1rem 0.5rem 0 0;
+	font-family: var(--font-base);
+
+	transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+	cursor: pointer;
+
+	&:hover {
+		background-color: #161f81;
+	}
+}
+
 .app__navbar-logo {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 
 	img {
-		width: 90px;
-		height: 20px;
+		width: 100px;
+		height: 30px;
 
 		@media screen and (min-width: 2000px) {
 			width: 180px;

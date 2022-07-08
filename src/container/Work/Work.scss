@@ -23,13 +23,6 @@
 	flex-direction: column;
 	margin: 2rem;
 
-	img {
-		width: 100%;
-		height: 150px;
-		border-radius: 15px;
-		object-fit: cover;
-	}
-
 	@media screen and (min-width: 2000px) {
 		width: 370px;
 		margin: 2rem 4rem;
@@ -48,7 +41,14 @@
 		}
 	}
 }
-
+.Card_bg {
+	img {
+		width: 100%;
+		height: 150px;
+		border-radius: 15px;
+		object-fit: cover;
+	}
+}
 .slider-container {
 	background: url('../../assets/bgIMG.png');
 	background-size: cover;
@@ -65,8 +65,9 @@
 }
 
 .Card_bg {
-	width: 350px;
-	height: 200px;
+	// background-color: red;
+	width: auto;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	object-fit: contain;
@@ -83,39 +84,53 @@
 
 .Card_bg:hover img {
 	// transform: scale(0.9) translateY(20px);
-	opacity: 0.6;
+	opacity: 0.2;
 }
+
+// .Card_bg_li {
+// 	position: absolute;
+// 	left: -25px;
+// 	bottom: 75px;
+// 	width: 100%;
+// 	/* padding: 15px; */
+// 	text-align: center;
+// 	color: #fff;
+// 	padding-bottom: 1vw;
+// }
 
 .Card_bg_li {
 	position: absolute;
-	left: -25px;
-	bottom: 75px;
-	width: 100%;
-	/* padding: 15px; */
+	padding: 15px;
 	text-align: center;
-	color: #fff;
-	padding-bottom: 1vw;
-}
 
-.Card_bg_li a {
+	/////////////////////
 	color: #fff;
 	display: flex;
-	padding: 0px 30px;
+	flex-direction: column;
+	// align-items: flex-end;
+	// background-color: red;
 	text-decoration: none;
 	border-radius: 5px;
 	transform: translateY(30px);
 	opacity: 0;
 	transition: all 0.3s ease-out;
-	justify-content: space-between;
+	:hover {
+		text-decoration: none;
+		color: #313bac;
+	}
+	a {
+		text-decoration: none;
+		transform: translateY(0);
+		color: rgb(255, 255, 255);
+		opacity: 1;
+	}
 }
 .app__button {
 	size: 12px;
 }
-.Card_bg_li :hover {
-	color: black;
-}
 
-.Card_bg:hover .Card_bg_li a {
+.Card_bg:hover .Card_bg_li {
+	text-decoration: none;
 	transform: translateY(0);
 	color: white;
 	opacity: 1;

@@ -29,7 +29,7 @@ const Skills = () => {
 		{
 			name: 'Technical Assistant',
 			company: 'Henry',
-			desc: 'Bootcamp con +800 horas de programación basadas en prácticas y proyectos reales.',
+			desc: 'Coordinar a un grupo de estudiantes para lograr la integración al equipo de estudio.',
 			year: 2022,
 		},
 	];

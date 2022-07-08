@@ -3,6 +3,7 @@ import { images } from '../../constants';
 import './Navbar.scss';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import cv from '../../assets/CV_Mariano_Dunand.pdf';
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
@@ -40,6 +41,13 @@ const Navbar = () => {
 						</ul>
 					</motion.div>
 				)}
+			</div>
+			<div>
+				<button className="app__navbar__button">
+					<a href={cv} target="_blank">
+						Descargar CV
+					</a>
+				</button>
 			</div>
 		</nav>
 	);
