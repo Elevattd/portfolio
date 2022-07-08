@@ -10,14 +10,17 @@ import './Skills.scss';
 const Skills = () => {
 	const skills = [
 		{ name: 'Java Script', icon: images.javascript },
-		{ name: 'HTML', icon: images.html },
-		{ name: 'CSS', icon: images.css },
 		{ name: 'React', icon: images.react },
 		{ name: 'Redux JS', icon: images.redux },
 		{ name: 'TypeScript', icon: images.typescript },
 		{ name: 'Node JS', icon: images.node },
 		{ name: 'Express', icon: images.express },
+		{ name: 'PostgreSql', icon: images.postgresql },
+		{ name: 'Git', icon: images.git },
+		{ name: 'HTML', icon: images.html },
+		{ name: 'CSS', icon: images.css },
 		{ name: 'MU5', icon: images.mu5 },
+		{ name: 'sass', icon: images.sass },
 	];
 	const experiences = [
 		{
