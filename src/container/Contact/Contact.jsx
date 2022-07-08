@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { motion } from 'framer-motion';
 import { confirm, error } from '../../utils/alert';
 import { AppWrap } from '../../wrapper';
 import './Contact.scss';
@@ -8,11 +7,12 @@ import { validate } from './ContactValidate';
 
 const Contact = () => {
 	const [errors, setErrors] = useState({
-		// user_name:
-		// 	'El nombre debe contener de 4 a 20 caracteres y solo admite letras',
-		// user_email: 'Introduzca un Email valido',
-		// user_message: 'El mensaje debe contener de 10 a 255 caracteres',
+		user_name:
+			'El nombre debe contener de 4 a 20 caracteres y solo admite letras',
+		user_email: 'Introduzca un Email valido',
+		user_message: 'El mensaje debe contener de 10 a 255 caracteres',
 	});
+
 	const [emailContent, setEmailContent] = useState({
 		user_name: '',
 		user_email: '',
@@ -33,10 +33,10 @@ const Contact = () => {
 		event.preventDefault();
 		emailjs
 			.send(
-				'service_rkd32or',
-				'template_gge1gfi',
+				'service_8j0o499',
+				'template_80gpbps',
 				emailContent,
-				'1EGok5DWbsnlSd9el',
+				'93vOhvwIb4VePXwvu',
 			)
 			.then((result) => (result.status === 200 ? confirm() : error()))
 			.catch((error) => console.log(error));
@@ -60,6 +60,7 @@ const Contact = () => {
 						name="user_name"
 						value={emailContent.user_name}
 						onChange={handleChange}
+						autoComplete="off"
 					/>
 					{errors.user_name && <p className="app_form_p">{errors.user_name}</p>}
 				</div>
@@ -72,6 +73,7 @@ const Contact = () => {
 						name="user_email"
 						value={emailContent.user_email}
 						onChange={handleChange}
+						autoComplete="off"
 					/>
 					{errors.user_email && (
 						<p className="app_form_p">{errors.user_email}</p>
@@ -84,6 +86,7 @@ const Contact = () => {
 						value={emailContent.user_message}
 						name="user_message"
 						onChange={handleChange}
+						autoComplete="off"
 					/>
 					{errors.user_message && (
 						<p className="app_form_textarea">{errors.user_message}</p>
