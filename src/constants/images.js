@@ -28,7 +28,7 @@ import logo from '../assets/logo.png';
 import pokemon from '../assets/pokemon.png';
 import yovoy from '../assets/yovoy.png';
 import netflix from '../assets/netflix.png';
-import rtkCcrud from '../assets/rkt-crud.png';
+import youEconomy from '../assets/youEconomy.png';
 
 export default {
 	git,
@@ -56,5 +56,6 @@ export default {
 	pokemon,
 	yovoy,
 	netflix,
-	rtkCcrud,
+
+	youEconomy,
 };

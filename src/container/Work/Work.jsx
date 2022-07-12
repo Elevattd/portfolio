@@ -26,6 +26,13 @@ const Work = () => {
 				'Typescript, HTML, CSS, React, Redux, Json Web Token, Material UI.',
 		},
 		{
+			title: 'youEconomy',
+			url: 'http://',
+			imgUrl: images.youEconomy,
+			urlR: 'https://github.com/Elevattd/youEconomy',
+			description: 'Futura description',
+		},
+		{
 			title: 'Netflix Clone',
 			url: 'http://',
 			imgUrl: images.netflix,
