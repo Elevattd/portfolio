@@ -27,7 +27,7 @@ const Work = () => {
     },
     {
       title: "youEconomy",
-      url: "",
+      url: "https://you-economy-vercel.vercel.app/",
       imgUrl: images.youEconomy,
       urlR: "https://github.com/Elevattd/youEconomy",
       description:
